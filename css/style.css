@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 html {
@@ -9,13 +10,12 @@ html {
 }
 
 main {
-    background-color: aqua;
     width: 100vw;
     height: 90vh;
 }
 
 nav {
-    background-color: blue;
+    background-color: black;
     height: 10vh;
     width: 100vw;
 }
@@ -30,4 +30,5 @@ nav > ul {
 .nav-item{
     color: white;
     display: block;
+    font-size: 1.6rem;
 }
