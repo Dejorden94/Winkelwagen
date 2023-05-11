@@ -38,33 +38,42 @@ nav > ul {
 }
 
 main {
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
     gap: 2rem;
 }
 
 .card {
-    padding: 2rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
+    border-radius: 1rem;
     width: 100%;
     height: 100%;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
 }
 
-.card > section > figure{
-    width: 100%;
+.card-description{
+    padding: 1rem 2rem;
 }
 
-figure > img {
+.card-image{
+    border-radius: 1rem 1rem 0 0;
+    height: 100%;
     width: 100%;
     background-size: cover;
 }
+
+.card-image:nth-of-type(1) {
+    background-image: url("../img/zhulodok.webp");
+}
+
+.card-image:nth-of-type(2) {
+    background-image: url("../img/Kogla.jpg");
+}
+
 
 .product--1 {
     grid-column: 2/4;
@@ -80,6 +89,15 @@ figure > img {
     padding: 1rem;
     background-color: #f9fafb;
     border-radius: 1rem;
+    margin: 1rem 0;
+}
+
+.card-section {
+    height: 50vh;
+    width: 50vw;
+    gap: 1rem;
+    display: flex;
+    
 }
 
 
